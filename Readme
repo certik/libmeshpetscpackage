@@ -1,12 +1,13 @@
-1) create ~/libs, cd ~/libs
-2) cp -r /contrib/patches .
-3) Run /contrib/downloadpackages, or manually get the packages and put them to
-archives/
+Installation instructions:
+==========================
 
-4) /contrib/buildarpack
+cd
+svn co http://libmeshpetscpackage.googlecode.com/svn/trunk/ libmeshpetscpackage
 
-5) /contrib/buildpetsc
+./buildarpack
 
-6) /contrib/buildslepc
+./buildpetsc
 
-7) /contrib/buildlibmesh
+./buildslepc
+
+./buildlibmesh
