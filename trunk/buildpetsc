@@ -1,5 +1,5 @@
 tar xzf archives/petsc-lite-2.3.1.tar.gz
-cd petsc-2.3.1-p12
+cd petsc-2.3.1-p19
 export PETSC_ARCH=linux
 export PETSC_DIR=`pwd`
 config/configure.py --with-cc=gcc --with-cxx=g++ --with-fc=g77 --with-mpi-dir=/usr/lib/mpich/ --with-debugging --with-shared 
