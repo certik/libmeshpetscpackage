@@ -1,6 +1,11 @@
+About
+=====
+
+This distribution includes petsc-2.3.1, slepc-2.3.1, arpack and libmesh from
+CVS (November 13, 2006).
+
 Installation instructions:
 ==========================
-
 
 cd
 svn co http://libmeshpetscpackage.googlecode.com/svn/trunk/ libmeshpetscpackage
