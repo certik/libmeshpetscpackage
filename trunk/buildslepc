@@ -5,5 +5,7 @@ arpackdir=`pwd`/ARPACK
 tar xzf archives/slepc-2.3.1.tgz
 cd slepc-2.3.1
 export SLEPC_DIR=`pwd`
-config/configure.py --with-arpack-dir=$arpackdir --with-arpack-flags=-lparpack,-larpack
+#this hangs the solver.... don't know why.
+#config/configure.py --with-arpack-dir=$arpackdir --with-arpack-flags=-lparpack,-larpack
+config/configure.py 
 make
