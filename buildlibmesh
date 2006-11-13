@@ -8,5 +8,5 @@ tar xjf archives/libmesh.tar.bz2
 cd libmesh
 export PETSC_ARCH=linux
 ./configure --enable-slepc
-make
+make -j2
 make run_examples
