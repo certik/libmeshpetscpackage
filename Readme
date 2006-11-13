@@ -1,7 +1,7 @@
 Installation instructions:
 ==========================
 
-wajig install g77 mpich-bin
+wajig install g77 mpich-bin libmpich1.0-dev
 
 cd
 svn co http://libmeshpetscpackage.googlecode.com/svn/trunk/ libmeshpetscpackage
