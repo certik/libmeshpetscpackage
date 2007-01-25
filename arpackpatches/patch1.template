@@ -5,7 +5,7 @@
  #  $(HOME)/ARPACK
  #
 -home          = $(HOME)/ARPACK
-+home          = $(HOME)/libmeshpetscpackage/ARPACK
++home          = %s
  #
  #  The platform identifier to suffix to the end of library names
  #

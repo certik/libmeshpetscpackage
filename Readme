@@ -13,12 +13,10 @@ Installation instructions:
 cd
 svn co http://libmeshpetscpackage.googlecode.com/svn/trunk/ libmeshpetscpackage
 
-wajig install g77 mpich-bin libmpich1.0-dev 
-./buildarpack
+wajig install g77 mpich-bin libmpich1.0-dev refblas3-dev lapack3-dev
 
-wajig install refblas3-dev lapack3-dev
-./buildpetsc
+./make
 
-./buildslepc
+This will install everything into the "lib" directory.
 
-./buildlibmesh
+./clean
