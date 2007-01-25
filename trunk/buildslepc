@@ -1,11 +1,11 @@
-export PETSC_DIR=`pwd`/petsc-2.3.1-p19
+cd libs
+export PETSC_DIR=`pwd`/petsc
 
 arpackdir=`pwd`/ARPACK
 
-tar xzf archives/slepc-2.3.1.tgz
-cd slepc-2.3.1
+tar xzf ../archives/slepc-2.3.2.tgz
+mv slepc-2.3.2 slepc
+cd slepc
 export SLEPC_DIR=`pwd`
-#this hangs the solver.... don't know why.
-#config/configure.py --with-arpack-dir=$arpackdir --with-arpack-flags=-lparpack,-larpack
-config/configure.py 
+config/configure.py --with-arpack-dir=$arpackdir --with-arpack-flags=-lparpack,-larpack
 make

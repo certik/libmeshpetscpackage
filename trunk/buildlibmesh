@@ -1,12 +1,12 @@
-#! /bin/bash
+cd libs
 
-export PETSC_DIR=`pwd`/petsc-2.3.1-p19
-export SLEPC_DIR=`pwd`/slepc-2.3.1
+export PETSC_DIR=`pwd`/petsc
+export SLEPC_DIR=`pwd`/slepc
 
-tar xjf archives/libmesh.tar.bz2
+tar xjf ../archives/libmesh.tar.bz2
 
 cd libmesh
 export PETSC_ARCH=linux
 ./configure --enable-slepc
 make -j2
-make run_examples
+#make run_examples
