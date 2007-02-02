@@ -2,3 +2,4 @@
 ./buildpetsc
 ./buildslepc
 ./buildlibmesh
+./buildlibmesh2
