@@ -6,7 +6,7 @@ mkdir libmesh2
 cd libmesh2
 tar xjf ../../archives/libmesh.tar.bz2
 mv libmesh/* .
-rm libmesh
+rm -r libmesh
 
 ./configure --disable-mpi --disable-petsc --disable-slepc --disable-sfc --disable-gzstreams --disable-tecplot --disable-metis --disable-parmetis --disable-tetgen --disable-triangle
 make -j2
