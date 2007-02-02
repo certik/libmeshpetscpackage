@@ -1,0 +1,13 @@
+#Build libmesh without external programs - no MPI, no petsc, etc...
+mkdir -p libs
+cd libs
+
+mkdir libmesh2
+cd libmesh2
+tar xjf ../../archives/libmesh.tar.bz2
+mv libmesh/* .
+rm libmesh
+
+./configure --disable-mpi --disable-petsc --disable-slepc --disable-sfc --disable-gzstreams --disable-tecplot --disable-metis --disable-parmetis --disable-tetgen --disable-triangle
+make -j2
+#make run_examples
