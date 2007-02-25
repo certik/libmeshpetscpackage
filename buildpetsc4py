@@ -1,0 +1,8 @@
+mkdir -p libs
+cd libs
+export PETSC_DIR=`pwd`/petsc
+tar xzf ../archives/petsc4py-0.7.2.tar.gz
+mv petsc4py-0.7.2 petsc4py
+cd petsc4py
+export PETSC_ARCH=linux
+python setup.py build

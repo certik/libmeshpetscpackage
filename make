@@ -3,3 +3,4 @@
 ./buildslepc
 ./buildlibmesh
 ./buildlibmesh2
+./buildpetsc4py
